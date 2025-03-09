@@ -1,7 +1,7 @@
 # GIT SSH SETUP
 SSH setup for git
 
-## MacOS
+## MacOS / Linux
 
 ### 1. Check for existing keys
 ```
@@ -65,7 +65,7 @@ $ touch ~/.ssh/config
 ```
 Host github.com
   AddKeysToAgent yes
-  UseKeychain yes
+  UseKeychain yes #  NOTE: UseKeychain is only supported on macOS. Remove this for line for LINUX.
   IdentityFile ~/.ssh/id_ed25519
 ```
 3.4 Add your SSH private key to the ssh-agent and store your passphrase in the keychain
